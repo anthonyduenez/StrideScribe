@@ -27,7 +27,6 @@ The app is built with SwiftUI and uses a shared observable tracker to keep the a
 - Review activity history with date, distance, duration, and pace.
 - View a completed run's route and detailed statistics.
 - Continue location tracking with background-task support.
-- Include unit-test and UI-test targets.
 
 ## Tech Stack
 
@@ -37,7 +36,6 @@ The app is built with SwiftUI and uses a shared observable tracker to keep the a
 - **UI:** SwiftUI
 - **Maps and location:** MapKit, Core Location
 - **Persistence:** UserDefaults
-- **Testing:** Swift Testing, XCTest
 
 ## Architecture and Project Structure
 
@@ -57,8 +55,6 @@ StrideScribe/
 │   ├── RunDetailView.swift
 │   ├── runTracker.swift
 │   └── Assets.xcassets/
-├── StrideScribeTests/
-└── StrideScribeUITests/
 ```
 
 ## Getting Started
@@ -88,14 +84,6 @@ Build and run the application using the iOS Simulator or a connected device.
 ## Documentation
 
 Additional project documentation is available in the [StrideScribe documentation page](https://www.notion.so/StrideScribe-Documentation-30ede2abd6a0807eaf39f86e454ddcaa?source=copy_link).
-
-## Testing
-
-The project contains both unit-test and UI-test targets. Run the test suite from Xcode with:
-
-```text
-Cmd + U
-```
 
 ## Author
 

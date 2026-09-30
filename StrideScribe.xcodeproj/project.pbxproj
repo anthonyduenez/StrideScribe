@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		9209AC4F2D7159ED00C9F614 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9209AC362D7159EC00C9F614 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9209AC3D2D7159EC00C9F614;
-			remoteInfo = StrideScribe;
-		};
-		9209AC592D7159ED00C9F614 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9209AC362D7159EC00C9F614 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9209AC3D2D7159EC00C9F614;
-			remoteInfo = StrideScribe;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		9209AC3E2D7159EC00C9F614 /* StrideScribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrideScribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9209AC4E2D7159ED00C9F614 /* StrideScribeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrideScribeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9209AC582D7159ED00C9F614 /* StrideScribeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrideScribeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -48,34 +29,10 @@
 			path = StrideScribe;
 			sourceTree = "<group>";
 		};
-		9209AC512D7159ED00C9F614 /* StrideScribeTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StrideScribeTests;
-			sourceTree = "<group>";
-		};
-		9209AC5B2D7159ED00C9F614 /* StrideScribeUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StrideScribeUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9209AC3B2D7159EC00C9F614 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9209AC4B2D7159ED00C9F614 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9209AC552D7159ED00C9F614 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				9209AC402D7159EC00C9F614 /* StrideScribe */,
-				9209AC512D7159ED00C9F614 /* StrideScribeTests */,
-				9209AC5B2D7159ED00C9F614 /* StrideScribeUITests */,
 				9209AC3F2D7159EC00C9F614 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				9209AC3E2D7159EC00C9F614 /* StrideScribe.app */,
-				9209AC4E2D7159ED00C9F614 /* StrideScribeTests.xctest */,
-				9209AC582D7159ED00C9F614 /* StrideScribeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,52 +83,6 @@
 			productReference = 9209AC3E2D7159EC00C9F614 /* StrideScribe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9209AC4D2D7159ED00C9F614 /* StrideScribeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9209AC652D7159ED00C9F614 /* Build configuration list for PBXNativeTarget "StrideScribeTests" */;
-			buildPhases = (
-				9209AC4A2D7159ED00C9F614 /* Sources */,
-				9209AC4B2D7159ED00C9F614 /* Frameworks */,
-				9209AC4C2D7159ED00C9F614 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9209AC502D7159ED00C9F614 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				9209AC512D7159ED00C9F614 /* StrideScribeTests */,
-			);
-			name = StrideScribeTests;
-			packageProductDependencies = (
-			);
-			productName = StrideScribeTests;
-			productReference = 9209AC4E2D7159ED00C9F614 /* StrideScribeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9209AC572D7159ED00C9F614 /* StrideScribeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9209AC682D7159ED00C9F614 /* Build configuration list for PBXNativeTarget "StrideScribeUITests" */;
-			buildPhases = (
-				9209AC542D7159ED00C9F614 /* Sources */,
-				9209AC552D7159ED00C9F614 /* Frameworks */,
-				9209AC562D7159ED00C9F614 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9209AC5A2D7159ED00C9F614 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				9209AC5B2D7159ED00C9F614 /* StrideScribeUITests */,
-			);
-			name = StrideScribeUITests;
-			packageProductDependencies = (
-			);
-			productName = StrideScribeUITests;
-			productReference = 9209AC582D7159ED00C9F614 /* StrideScribeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,14 +95,6 @@
 				TargetAttributes = {
 					9209AC3D2D7159EC00C9F614 = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					9209AC4D2D7159ED00C9F614 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 9209AC3D2D7159EC00C9F614;
-					};
-					9209AC572D7159ED00C9F614 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 9209AC3D2D7159EC00C9F614;
 					};
 				};
 			};
@@ -214,28 +113,12 @@
 			projectRoot = "";
 			targets = (
 				9209AC3D2D7159EC00C9F614 /* StrideScribe */,
-				9209AC4D2D7159ED00C9F614 /* StrideScribeTests */,
-				9209AC572D7159ED00C9F614 /* StrideScribeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9209AC3C2D7159EC00C9F614 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9209AC4C2D7159ED00C9F614 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9209AC562D7159ED00C9F614 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,34 +135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9209AC4A2D7159ED00C9F614 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9209AC542D7159ED00C9F614 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9209AC502D7159ED00C9F614 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9209AC3D2D7159EC00C9F614 /* StrideScribe */;
-			targetProxy = 9209AC4F2D7159ED00C9F614 /* PBXContainerItemProxy */;
-		};
-		9209AC5A2D7159ED00C9F614 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9209AC3D2D7159EC00C9F614 /* StrideScribe */;
-			targetProxy = 9209AC592D7159ED00C9F614 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9209AC602D7159ED00C9F614 /* Debug */ = {
@@ -465,74 +321,6 @@
 			};
 			name = Release;
 		};
-		9209AC662D7159ED00C9F614 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ants.StrideScribeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StrideScribe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StrideScribe";
-			};
-			name = Debug;
-		};
-		9209AC672D7159ED00C9F614 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ants.StrideScribeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StrideScribe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StrideScribe";
-			};
-			name = Release;
-		};
-		9209AC692D7159ED00C9F614 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ants.StrideScribeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StrideScribe;
-			};
-			name = Debug;
-		};
-		9209AC6A2D7159ED00C9F614 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ants.StrideScribeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StrideScribe;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -550,24 +338,6 @@
 			buildConfigurations = (
 				9209AC632D7159ED00C9F614 /* Debug */,
 				9209AC642D7159ED00C9F614 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9209AC652D7159ED00C9F614 /* Build configuration list for PBXNativeTarget "StrideScribeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9209AC662D7159ED00C9F614 /* Debug */,
-				9209AC672D7159ED00C9F614 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9209AC682D7159ED00C9F614 /* Build configuration list for PBXNativeTarget "StrideScribeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9209AC692D7159ED00C9F614 /* Debug */,
-				9209AC6A2D7159ED00C9F614 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
