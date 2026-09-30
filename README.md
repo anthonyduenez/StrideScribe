@@ -1,41 +1,62 @@
 # StrideScribe
 
-StrideScribe is an iOS running and activity tracking application designed to help users log workouts, monitor progress, and build consistent fitness habits through a clean and intuitive mobile experience.
+> **Project status: Shelved**
+
+StrideScribe is an iOS running and activity-tracking application built to help users record workouts, monitor progress, and build consistent fitness habits through a focused mobile experience.
+
+This project is preserved as a completed software-development and mobile-application learning project. No further features or maintenance are currently planned.
 
 ## Overview
 
-StrideScribe focuses on making fitness tracking simple and accessible. The application allows users to record running activity, manage workout information, and visualize progress directly from their iPhone.
+StrideScribe connects three moments in one running workflow:
 
-This project was developed using Swift and Xcode as part of a software development and mobile application learning project.
+1. Start a run from a map showing the current location.
+2. Track distance, pace, elapsed time, and location updates while running.
+3. Review completed runs with saved statistics and route details.
+
+The app is built with SwiftUI and uses a shared observable tracker to keep the active run state available across the app's views.
 
 ## Features
 
-* Track running and workout activity
-* Record fitness session information
-* User-friendly iOS interface
-* Persistent local data storage
-* Native Swift implementation
-* Organized project structure with testing support
+- Start a running session from a live map.
+- Track GPS location updates during a run.
+- Calculate distance, pace, and elapsed time in real time.
+- Pause, resume, and stop a run using deliberate long-press controls.
+- Provide haptic feedback for important run controls.
+- Save completed runs locally.
+- Review activity history with date, distance, duration, and pace.
+- View a completed run's route and detailed statistics.
+- Continue location tracking with background-task support.
+- Include unit-test and UI-test targets.
 
 ## Tech Stack
 
-* **Language:** Swift
-* **Platform:** iOS
-* **IDE:** Xcode
-* **Frameworks:** SwiftUI / UIKit (depending on implementation)
-* **Testing:** XCTest
+- **Language:** Swift
+- **Platform:** iOS
+- **IDE:** Xcode
+- **UI:** SwiftUI
+- **Maps and location:** MapKit, Core Location
+- **Persistence:** UserDefaults
+- **Testing:** Swift Testing, XCTest
 
-## Project Structure
+## Architecture and Project Structure
+
+The `runTracker` observable object owns the active run state, location manager, timer, route locations, and saved run history. It is created by the app entry point and injected into the SwiftUI environment so the map, live run screen, stop screen, activity history, and run detail views can share the same state.
 
 ```text
 StrideScribe/
 ├── StrideScribe.xcodeproj
 ├── StrideScribe/
-│   ├── Views/
-│   ├── Models/
-│   ├── Controllers/
-│   ├── Assets.xcassets/
-│   └── Supporting Files/
+│   ├── StrideScribeApp.swift
+│   ├── StrideTabView.swift
+│   ├── ContentView.swift
+│   ├── runView.swift
+│   ├── StopView.swift
+│   ├── CountdownView.swift
+│   ├── ActivityView.swift
+│   ├── RunDetailView.swift
+│   ├── runTracker.swift
+│   └── Assets.xcassets/
 ├── StrideScribeTests/
 └── StrideScribeUITests/
 ```
@@ -44,59 +65,37 @@ StrideScribe/
 
 ### Prerequisites
 
-Before running the project, make sure you have:
-
-* macOS
-* Xcode installed
-* iOS Simulator or physical iPhone device
+- macOS
+- Xcode
+- iOS Simulator or a connected iPhone
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
 
 ```bash
 git clone https://github.com/anthonyduenez/StrideScribe.git
 ```
 
-2. Open the project in Xcode:
+Open the project in Xcode:
 
 ```bash
 open StrideScribe.xcodeproj
 ```
 
-3. Build and run the application using the iOS Simulator or a connected device.
-
----
+Build and run the application using the iOS Simulator or a connected device.
 
 ## Documentation
 
-Additional project documentation can be found here:
-
-* [StrideScribe Documentation](https://www.notion.so/StrideScribe-Documentation-30ede2abd6a0807eaf39f86e454ddcaa?source=copy_link)
+Additional project documentation is available in the [StrideScribe documentation page](https://www.notion.so/StrideScribe-Documentation-30ede2abd6a0807eaf39f86e454ddcaa?source=copy_link).
 
 ## Testing
 
-The project includes:
+The project contains both unit-test and UI-test targets. Run the test suite from Xcode with:
 
-* Unit Tests
-* UI Tests
-
-Run tests in Xcode using:
-
-```bash
+```text
 Cmd + U
 ```
-
-## Future Improvements
-
-Planned features and improvements may include:
-
-* GPS route tracking
-* Workout analytics and charts
-* Cloud synchronization
-* Apple Health integration
-* Social sharing features
-* Improved accessibility support
 
 ## Author
 
